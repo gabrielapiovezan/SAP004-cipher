@@ -3,34 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="style.css" /> 
   </head>
   <body>
       <main>
         <h1>Cifras de César</h1>
         <form>
-          <label>Deslicamento:</label>
+          <label>Deslocamento:</label>
           <input id="deslocamento" 
           size="100" 
           type="number" min="1" max="100" 
           name="deslocamento" 
-          placeholder="número" 
+          placeholder="num" 
           required><br>
-        <form id="escolha">
-          <input type="radio" name="escolhaRadio" value="0">
-        <label>Cifrar</label>
-        <input type="radio" name="escolhaRadio" value="1">
-        <label>Decifrar</label><br>
+        </form>
+           <form id="escolha">
+          <input type="radio"  name="escolhaRadio" value="c"><label>Cifrar</label>
+          <input type="radio"  name="escolhaRadio" value="d"><label>Decifrar</label><br>
         </form>
         <textarea 
         id="caixaDeTexto"
         name="texto" 
-        rows="15" 
-        cols="35">
+        rows="15"
+        cols="50"
+        required>
       </textarea><br>
-      <button onclick="enviar ()">Enviar</button>  
-      </form>
-      </main>
-    <script src="index.js" type="module"></script>
+      <button onclick="enviar()">Enviar</button><br>
+      <div id="saida">
+
+      </div>
+    </main>
+      <script src="index.js"></script>
   </body>
 </html>
