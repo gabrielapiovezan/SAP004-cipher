@@ -6,9 +6,31 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
+      <main>
+        <h1>Cifras de César</h1>
+        <form>
+          <label>Deslicamento:</label>
+          <input id="deslocamento" 
+          size="100" 
+          type="number" min="1" max="100" 
+          name="deslocamento" 
+          placeholder="número" 
+          required><br>
+        <form id="escolha">
+          <input type="radio" name="escolhaRadio" value="0">
+        <label>Cifrar</label>
+        <input type="radio" name="escolhaRadio" value="1">
+        <label>Decifrar</label><br>
+        </form>
+        <textarea 
+        id="caixaDeTexto"
+        name="texto" 
+        rows="15" 
+        cols="35">
+      </textarea><br>
+      <button onclick="enviar ()">Enviar</button>  
+      </form>
+      </main>
     <script src="index.js" type="module"></script>
   </body>
 </html>
