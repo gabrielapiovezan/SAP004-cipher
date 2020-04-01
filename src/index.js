@@ -1,24 +1,28 @@
 import cipher from './cipher.js';
 
-console.log(cipher);
+let result = document.getElementById("result")
+document.getElementById('messageBox').value = '';
+//const button = document.querySelector('input');
+//button.addEventListener('click', send);
 
-
-let saida = document.getElementById("saida")
-document.getElementById('caixaDeTexto').value = '';
-
-function enviar()
-{  
-   saida.innerHTML = ``   
-   let escolha = document.getElementById("escolha")
-   let deslocamento = document.getElementById("deslocamento")
-   let texto= document.getElementById("caixaDeTexto").value
-   let desl = parseInt(deslocamento.value)
-   if(escolha.escolhaRadio.value=="d")
-   desl *=-1
-   //let resultado = cipher.funcao.operacao(desl,texto)
-
-   for(let i=0; i<resultado.length;i++)
+const send = function ()
+{  let resultPrint
+   result.innerHTML = ``   
+   let choice = document.getElementById("choice")
+   let displacement = document.getElementById("displacement")
+   let message= document.getElementById("messageBox").value
+   let displacementNumber = parseInt(displacement.value)
+   
+   if(choice.choiceRadio.value=="d")
    {
-    saida.innerHTML += `${String.fromCharCode(resultado[i])}`  
+   displacementNumber *=-1
+   resultPrint = cipher.decode(displacementNumber,message)
+   }
+   else
+   resultPrint = cipher.encode(displacementNumber,message)
+   for(let i=0; i<resultPrint.length;i++)
+   {
+    result.innerHTML += `${String.fromCharCode(resultPrint[i])}`  
    }
 }
+document.getElementById('buttonSend').addEventListener('click', send, true);

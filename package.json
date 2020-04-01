@@ -22,5 +22,19 @@
     "jest": "^24.9.0",
     "opener": "^1.5.1",
     "serve": "^11.0.0"
-  }
+  },
+  "description": "## Índice",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielapiovezan/SAP004-cipher.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/gabrielapiovezan/SAP004-cipher/issues"
+  },
+  "homepage": "https://github.com/gabrielapiovezan/SAP004-cipher#readme"
 }
