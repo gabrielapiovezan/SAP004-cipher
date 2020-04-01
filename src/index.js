@@ -15,14 +15,10 @@ const send = function ()
    
    if(choice.choiceRadio.value=="d")
    {
-   displacementNumber *=-1
    resultPrint = cipher.decode(displacementNumber,message)
    }
-   else
+   else if(choice.choiceRadio.value=="c")
    resultPrint = cipher.encode(displacementNumber,message)
-   for(let i=0; i<resultPrint.length;i++)
-   {
-    result.innerHTML += `${String.fromCharCode(resultPrint[i])}`  
-   }
+   result.innerHTML += `${resultPrint}`  
 }
 document.getElementById('buttonSend').addEventListener('click', send, true);

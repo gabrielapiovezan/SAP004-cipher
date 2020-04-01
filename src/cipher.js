@@ -2,6 +2,7 @@ const cipher = {
    
    encode (displacementNumber,message)
    {
+   let messageReturn =""
    let  messageArray=[]
    for(let i=0;i<message.length;i++){
       messageArray[i] = ((message.charAt(i)).toUpperCase())
@@ -10,37 +11,38 @@ const cipher = {
       else
       {        
       let validateCondition = (messageArray[i].charCodeAt(0)-65) + displacementNumber
-        // if(validadeCondition>=0)
          messageArray[i] = (validateCondition)%26+65
-         //else
-          //messageArray[i]= (Math.abs(validateCondition)%26-91)*-1
+         messageReturn +=String.fromCharCode(messageArray[i])
       }
 
    }
-   return messageArray
+   return messageReturn
    },
 
    decode (displacementNumber,message)
    {
+   displacementNumber *=-1  
+   let messageReturn =""
    let  messageArray=[]
       for(let i=0;i<message.length;i++){
          messageArray[i] = ((message.charAt(i)).toUpperCase())
          if(messageArray[i].charCodeAt(0)<65  || messageArray[i].charCodeAt(0)>90)
-            messageArray[i]= messageArray[i].charCodeAt(0)
+         messageArray[i]= messageArray[i].charCodeAt(0) 
          else
-         {        
-         let validateCondition = (messageArray[i].charCodeAt(0)-65) + displacementNumber
-         if(validateCondition>=0)
-            messageArray[i] = (validateCondition)%26+65
-         else
-          messageArray[i]= (Math.abs(validateCondition)%26-91)*-1
-      }
-      //console.log(String.fromCharCode(messageArray[i]))
-       }
-      return messageArray
+         {   
+            let validateCondition = (messageArray[i].charCodeAt(0)-65) + displacementNumber
+            if(validateCondition%26>=0)
+               messageArray[i] = (validateCondition)%26+65
+            else
+            {
+               messageArray[i]= (Math.abs(validateCondition)%26-91)*-1
+            }
+            messageReturn +=String.fromCharCode(messageArray[i])
+         }
+       } 
+      return messageReturn 
    }
 };
 export default cipher;
 
-//export function operacao()
 
