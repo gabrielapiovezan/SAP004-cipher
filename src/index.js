@@ -1,24 +1,29 @@
 import cipher from './cipher.js';
 
 let result = document.getElementById("result")
+let messageBox = document.getElementById("messageBox")
 document.getElementById('messageBox').value = '';
-//const button = document.querySelector('input');
-//button.addEventListener('click', send);
 
 const send = function ()
-{  let resultPrint
-   result.innerHTML = ``   
+{
+   let resultPrint
+   result.innerHTML = ""   
+   messageBox.innerHTML = ""
    let choice = document.getElementById("choice")
    let displacement = document.getElementById("displacement")
    let message= document.getElementById("messageBox").value
    let displacementNumber = parseInt(displacement.value)
    
-   if(choice.choiceRadio.value=="d")
-   {
+   if(choice.choiceRadio.value=="d"){
    resultPrint = cipher.decode(displacementNumber,message)
    }
-   else if(choice.choiceRadio.value=="c")
+   else if(choice.choiceRadio.value=="c"){
    resultPrint = cipher.encode(displacementNumber,message)
+   }
    result.innerHTML += `${resultPrint}`  
+
 }
-document.getElementById('buttonSend').addEventListener('click', send, true);
+//document.getElementById("buttonSend").addEventListener('click', send, true);
+//input
+document.getElementById("messageBox").addEventListener("input", send);
+choice.addEventListener("click",send,true);
