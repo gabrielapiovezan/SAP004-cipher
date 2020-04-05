@@ -46,17 +46,17 @@ section {
 }
 
 .messageboxstylediv{
-    position: absolute;
-    right: 25px;
+    position: relative;
+    left:  120px;
     width: 45%;
     padding: 35px;
-   /* background-color: lawngreen; */
+    /*background-color: lawngreen; */
     padding: 0px;
     display: inline-block;
 }
 
 textarea{
-   /* display:inline-block; */
+   display:inline-block;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
 }
