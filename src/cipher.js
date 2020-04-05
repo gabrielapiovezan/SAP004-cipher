@@ -8,7 +8,7 @@ const cipher = {
          let messageArray = []
          for (let i = 0; i < message.length; i++) {
             messageArray[i] = (message.charAt(i).toUpperCase())
-            if (messageArray[i].charCodeAt(0) < 65 || messageArray[i].charCodeAt(0) > 90)
+            if ((messageArray[i].charCodeAt(0) < 65 || messageArray[i].charCodeAt(0) > 90) )
                messageArray[i] = (messageArray[i].charCodeAt())
             else {
                let validateCondition = (messageArray[i].charCodeAt(0) - 65) + displacementNumber
