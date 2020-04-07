@@ -26,4 +26,5 @@ const send = function ()
 //document.getElementById("buttonSend").addEventListener('click', send, true);
 //input
 document.getElementById("messageBox").addEventListener("input", send);
-document.getElementById("choice").addEventListener("click",send,true);
+document.getElementById("choice").addEventListener("click",send);
+document.getElementById("displacement").addEventListener("input",send);
