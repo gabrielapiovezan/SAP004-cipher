@@ -15,7 +15,8 @@ const cipher = {
                letter = 65
             if (letter === 0)
                messageArray[i] = (messageArray[i].charCodeAt())
-            else {//alert("foii")   
+            else {
+               //alert("foii")   
                //messageArray[i] = (message.charAt(i).toUpperCase())
                //if ((messageArray[i].charCodeAt(0) < 65 || messageArray[i].charCodeAt(0) > 90) ){
                //  messageArray[i] = (messageArray[i].charCodeAt())
@@ -58,7 +59,6 @@ const cipher = {
                else {
                   messageArray[i] = (Math.abs(validateCondition) % 26 - spin) * -1
                }
-
             }
             letter = 0;
             messageReturn += String.fromCharCode(messageArray[i])
@@ -68,5 +68,3 @@ const cipher = {
    }
 };
 export default cipher;
-
-
