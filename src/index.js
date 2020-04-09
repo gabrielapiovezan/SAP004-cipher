@@ -2,7 +2,10 @@ import cipher from './cipher.js';
 
 let result = document.getElementById("result")
 let messageBox = document.getElementById("messageBox")
+<<<<<<< HEAD
 let displacement = document.getElementById("displacement")
+=======
+>>>>>>> 48ecd9cbc51bde619873e14493cea6dbc864f413
 document.getElementById("messageBox").value = '';
 
 
