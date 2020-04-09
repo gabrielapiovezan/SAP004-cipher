@@ -2,7 +2,7 @@ import cipher from './cipher.js';
 
 let result = document.getElementById("result")
 let messageBox = document.getElementById("messageBox")
-document.getElementById('messageBox').value = '';
+document.getElementById("messageBox").value = '';
 
 
 const send = function () {
@@ -12,7 +12,6 @@ const send = function () {
    let choice = document.getElementById("choice")
    let message = document.getElementById("messageBox").value
    let displacementNumber = parseInt(displacement.value)
-   
    if (!displacementNumber)
       resultPrint = message
    else {
