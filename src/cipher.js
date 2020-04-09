@@ -1,55 +1,24 @@
 const cipher = {
 
    encode(displacementNumber, message) {
+
       if (!displacementNumber || !message)
          throw new TypeError("Parametros não conferem");
       else {
-         let letter = 0
-         let messageReturn = ""
-         let messageArray = []
-         for (let i = 0; i < message.length; i++) {
-            messageArray[i] = (message.charAt(i))
-            if (messageArray[i].charCodeAt(0) >= 97 && messageArray[i].charCodeAt(0) <= 122)
-               letter = 97
-            if (messageArray[i].charCodeAt(0) >= 65 && messageArray[i].charCodeAt(0) <= 90)
-               letter = 65
-            if (letter === 0)
-               messageArray[i] = (messageArray[i].charCodeAt())
-            else {
-               //alert("foii")   
-               //messageArray[i] = (message.charAt(i).toUpperCase())
-               //if ((messageArray[i].charCodeAt(0) < 65 || messageArray[i].charCodeAt(0) > 90) ){
-               //  messageArray[i] = (messageArray[i].charCodeAt())
-               //else {
-
-               let validateCondition = (messageArray[i].charCodeAt(0) - letter) + displacementNumber
-               messageArray[i] = (validateCondition) % 26 + letter
-               //}
-
-               letter = 0;
-            } messageReturn += String.fromCharCode(messageArray[i])
-         }
-         return messageReturn
-      }
-   },
-
-   decode(displacementNumber, message) {
-      //if (!displacementNumber || !message)
-      //throw new TypeError("Parametros não conferem");
-      //else {
-         displacementNumber *= -1
          let messageReturn = ""
          let messageArray = []
          let letter = 0
          let spin = 91
          for (let i = 0; i < message.length; i++) {
             messageArray[i] = (message.charAt(i))
-            if (messageArray[i].charCodeAt(0) >= 97 && messageArray[i].charCodeAt(0) <= 122){   
-            letter = 97
-               spin = 123}
-            if (messageArray[i].charCodeAt(0) >= 65 && messageArray[i].charCodeAt(0) <= 90){
+            if (messageArray[i].charCodeAt(0) >= 97 && messageArray[i].charCodeAt(0) <= 122) {
+               letter = 97
+               spin = 123
+            }
+            if (messageArray[i].charCodeAt(0) >= 65 && messageArray[i].charCodeAt(0) <= 90) {
                letter = 65
-               spin = 91}
+               spin = 91
+            }
             if (letter === 0)
                messageArray[i] = (messageArray[i].charCodeAt())
             else {
@@ -64,7 +33,39 @@ const cipher = {
             messageReturn += String.fromCharCode(messageArray[i])
          }
          return messageReturn
-      //}
+      }
+   },
+
+   decode(displacementNumber, message) {
+      displacementNumber *= -1
+      let messageReturn = ""
+      let messageArray = []
+      let letter = 0
+      let spin = 91
+      for (let i = 0; i < message.length; i++) {
+         messageArray[i] = (message.charAt(i))
+         if (messageArray[i].charCodeAt(0) >= 97 && messageArray[i].charCodeAt(0) <= 122) {
+            letter = 97
+            spin = 123
+         }
+         if (messageArray[i].charCodeAt(0) >= 65 && messageArray[i].charCodeAt(0) <= 90) {
+            letter = 65
+            spin = 91
+         }
+         if (letter === 0)
+            messageArray[i] = (messageArray[i].charCodeAt())
+         else {
+            let validateCondition = (messageArray[i].charCodeAt(0) - letter) + displacementNumber
+            if (validateCondition % 26 >= 0)
+               messageArray[i] = (validateCondition) % 26 + letter
+            else {
+               messageArray[i] = (Math.abs(validateCondition) % 26 - spin) * -1
+            }
+         }
+         letter = 0;
+         messageReturn += String.fromCharCode(messageArray[i])
+      }
+      return messageReturn
    }
 };
 export default cipher;
