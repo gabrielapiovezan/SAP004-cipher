@@ -12,31 +12,77 @@
     <img id="fundo" src="imagens/imagem1.jpg" al="Imagem">
   </div>
   <header id="titulo">
-  
-    <ul>
-      <li>Cifra Receita</li>
-      <li>Início</li>
-      <li>Minhas Receitas</li>
-      <li>Contato</li>
-      <li>Notícias</li>
-  </ul>
-  </header>
-  <section>
-    <div  id="sec">
-      <b><font size="28" >CifraReceita</font></b><hr>
 
-    <div class="textoCorpo">
-      <br>Suas <br><b><font size="7" face="Geneve">Receitas</font></b><br>
-      e<br><b><font size="8">Ingredientes</font></b>
-        <br><b><font size="8" face="Geneve">protegidos</font></b><br>
+    <ul>
+      <li id="cifraReceita">Cifra Receita</li>
+      <li id="inicio">Início</li>
+      <li>Minhas Receitas</li>
+      <li id="contato">Contato</li>
+      <li>Notícias</li>
+    </ul>
+  </header>
+
+  <section>
+    <div><b>
+        <font size="28">CifraReceita</font>
+      </b>
+      <hr>
+    </div>
+    <div id=welcome>
+      <div>
+        Bem vindo ao <b>CriptoReceita</b>!<br>
+        Aqui você pode cifrar e decifrar suas receitas
+        de uma forma simples,escolha o deslocamento, a
+        opção desejada e digite sua receite.
+        Deseja iniciar?</div><br>
+      <div id="sim">Sim </div>
+    </div>
+    <div id="contatoEmail">Gabriela Piovezan<br>
+      gabrielapiovezan@live.com<br>
+      (11)1234-1234</div>
+    <div id="sobre">
+      <h1>Sobre nós:</h1>
+      O ramo da gastronomia requer sigilo em receitas e ingredientes, a fim de auxiliar tanto, profissionais da área,
+      como os aspirantes a Chefe que não desejam compartilhar o elemento surpresa dos seus procedimentos, foi
+      desenvolvido o CrifraReceita, o site cifra receitas para que possam ser guardadas de forma segura.
+
+      <h2>Principais usuários:</h2>
+      - Empresas do ramo alimentício
+      - Chefes de cozinha
+      - Pessoas comuns que desejam guardar suas receitas
+
+      <h2>Objetivo:</h2>
+      O objetivo principal do site é cifrar receitas, fórmulas e ingredientes gastronômicos.
+
+      <h2>Solução:</h2>
+      Com suas receitas cifradas, o usuário pode ter mais segurança no armazenamento e envio para pessoas
+      autorizadas(que podem usar o site para decifrar), sem que seus segredos sejam revelados e seus procedimentos sejam
+      copiados.
+
+
+
+    </div>
+    <div id="sec">
+      <div class="textoCorpo">
+        <br>Suas <br><b>
+          <font size="7" face="Geneve">Receitas</font>
+        </b><br>
+        e<br><b>
+          <font size="8">Ingredientes</font>
+        </b>
+        <br><b>
+          <font size="8" face="Geneve">protegidos</font>
+        </b><br>
         de uma maneira <br>simples e <br>
-        <b><font size="9"> segura.</font></b></div>
+        <b>
+          <font size="9"> segura.</font>
+        </b></div>
       <div class="messageboxstylediv">
         <table>
           <tr>
             <td>
               <label class="level">Level:</label>
-              <input id="displacement" value="1" size="100" type="number" min="-100" max="100"  name="displacement"
+              <input id="displacement" value="1" size="100" type="number" min="-100" max="100" name="displacement"
                 placeholder="num" required>
             </td>
             <td>
@@ -47,8 +93,7 @@
             </td>
           </tr>
         </table>
-        <textarea class="caixa" id="messageBox" name="texto" rows="16" cols="25" 
-        placeholder="BRIGADEIRO:
+        <textarea class="caixa" id="messageBox" name="texto" rows="16" cols="25" placeholder="BRIGADEIRO:
         INGREDIENTES
         1 caixa de leite condensado
         1 colher (sopa) de margarina sem sal
@@ -62,13 +107,15 @@
         <textarea class="caixa" id="result" name="texto" rows="16" cols="25" disabled>
     </textarea>
       </div><br>
-      </div>
+    </div>
   </section>
   <footer>
     <ul>
-      <li><a href="https://www.facebook.com/gabrielapiovezan?ref=bookmarks" target="_blank"><img src="imagens/icon-f.png" al="Facebook"></a></li>
-      <li><a href="https://www.instagram.com/gabrielapiovezan/?hl=pt-br" target="_blank"><img src="imagens/icon-i.png" al="Instagram"></a></li>
-      <li><img src="imagens/icon-t.png" al="Twitter"></li>
+      <li><a href="https://www.facebook.com" target="_blank"><img
+            src="imagens/icon-f.png" al="Facebook"></a></li>
+      <li><a href="https://www.instagram.com/?hl=pt-br" target="_blank"><img src="imagens/icon-i.png"
+            al="Instagram"></a></li>
+      <li><a href="https://twitter.com/" target="_blank"><img src="imagens/icon-t.png" al="Twitter"></li>
     </ul>
   </footer>
   <script src="index.js" type="module"></script>
