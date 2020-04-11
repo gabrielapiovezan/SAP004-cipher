@@ -31,8 +31,6 @@ const clear = function () {
    document.getElementById("sec").style.display = "none"
    document.getElementById("welcome").style.display = "none"
    document.getElementById("contatoEmail").style.display = "none"
-   document.getElementById("messageBox").value=""
-   document.getElementById("result").value=""
 }
 const cifraReceita = function () {
    clear()
@@ -44,7 +42,10 @@ const inicio = function () {
 }
 const start = function () {
    clear()
+   messageBox.value=""
+ //  result.value=""
    document.getElementById("sec").style.display = "block"
+   send()
 }
 const contato = function () {
    clear()
