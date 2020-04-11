@@ -31,6 +31,8 @@ const clear = function () {
    document.getElementById("sec").style.display = "none"
    document.getElementById("welcome").style.display = "none"
    document.getElementById("contatoEmail").style.display = "none"
+   document.getElementById("messageBox").value=""
+   document.getElementById("result").value=""
 }
 const cifraReceita = function () {
    clear()

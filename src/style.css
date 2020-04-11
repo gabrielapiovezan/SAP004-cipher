@@ -35,7 +35,7 @@ body, html {
 }
 #contatoEmail{
     position: absolute;
-    width: 25%;
+    width: 30%;
     left: 37.5%;
     top: 150px;
     padding: 19px;
@@ -107,7 +107,6 @@ textarea{
     z-index: 1;
     width: 100%;
     }
-
 
 ul{
     background-color: rgb(227, 233, 245);
