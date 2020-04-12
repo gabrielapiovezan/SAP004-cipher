@@ -24,9 +24,9 @@ const cipher = {
             else {
                let validateCondition = (messageArray[i].charCodeAt(0) - letter) + displacementNumber
                if (validateCondition % 26 >= 0)
-                  messageArray[i] = (validateCondition) % 26 + letter
+                  messageArray[i] = validateCondition % 26 + letter
                else
-                  messageArray[i] = ((Math.abs(validateCondition)) % 26 - spin) * -1
+                  messageArray[i] = (Math.abs(validateCondition) % 26 - spin) * -1
             }
             letter = 0
             messageReturn += String.fromCharCode(messageArray[i])
