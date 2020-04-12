@@ -32,6 +32,25 @@ const clear = function () {
    document.getElementById("welcome").style.display = "none"
    document.getElementById("contatoEmail").style.display = "none"
 }
+const clearText = function () {
+   let choice = document.getElementById("choice")
+   choice.choiceRadio.value = "c"
+   messageBox.value = ""
+   document.getElementById("sec").style.display = "block"
+   send()
+}
+const reverse = function () {
+   let choice = document.getElementById("choice")
+   let message = document.getElementById("messageBox")
+   let result = document.getElementById("result")
+   message.value = result.value
+   if (choice.choiceRadio.value == "d")
+      choice.choiceRadio.value = "c"
+   else
+      choice.choiceRadio.value = "d"
+   send()
+
+}
 const cifraReceita = function () {
    clear()
    document.getElementById("sobre").style.display = "block"
@@ -42,10 +61,7 @@ const inicio = function () {
 }
 const start = function () {
    clear()
-   messageBox.value=""
- //  result.value=""
-   document.getElementById("sec").style.display = "block"
-   send()
+   clearText()
 }
 const contato = function () {
    clear()
@@ -60,3 +76,5 @@ document.getElementById("cifraReceita").addEventListener("click", cifraReceita)
 document.getElementById("inicio").addEventListener("click", inicio)
 document.getElementById("sim").addEventListener("click", start)
 document.getElementById("contato").addEventListener("click", contato)
+document.getElementById("reverse").addEventListener("click", reverse)
+document.getElementById("clearText").addEventListener("click", clearText)
