@@ -5,7 +5,7 @@ body, html {
     height: 100%;
     font-family: Arial, Tahoma, sans-serif;
 }
-#fundo {
+#back {
     position: fixed;
     top: 0px;
     width: 100%;
@@ -24,7 +24,7 @@ body, html {
     background: rgba(255,255,255,0.30);
     color: cornsilk;
 }
-#sim{
+#yes{
     background-color: rgba(204, 4, 4, 0.925);
     position: absolute;
     width: 30%;
@@ -33,7 +33,7 @@ body, html {
     text-align: center;
     border-radius: 5px;
 }
-#contatoEmail{
+#email{
     position: absolute;
     width: 30%;
     left: 32.5%;
@@ -47,13 +47,22 @@ body, html {
     color: white;
 }
 
-#sim:hover{
+#yes:hover{
     background-color: green;
     cursor: pointer;
 }
 #sec{
     color: white;
     font-size: 16px;
+}
+.main-style{
+    position:absolute;
+    display:inline-block; 
+    top: 50px;
+    left: 15%;
+    width: 70%;
+    height: 100%;
+    padding: 30px;
 }
 section {
     position:absolute;
@@ -64,7 +73,7 @@ section {
     height: 100%;
     padding: 30px;
 }
-#cifraR{
+header{
     color:white;
 }
 .options{
@@ -76,7 +85,7 @@ section {
     left: 50px;
 }
 
-.textoCorpo{
+.body-text{
     position: absolute;
     display: inline-block;
     left : 40px;
@@ -116,7 +125,7 @@ color: cornsilk;
 .button:hover{
     background-color: white;
 }
-.caixa{
+.box-class{
     padding: 10px;
     background-color: rgba(255, 248, 220, 0.6);
     color:rgb(32, 32, 32);
@@ -126,7 +135,7 @@ color: cornsilk;
     background-color: rgba(255, 248, 220, 0.7);
     color: black;
 }
-#titulo{
+#menu{
     position: absolute;
     top: -20px;
     z-index: 1;
@@ -134,171 +143,7 @@ color: cornsilk;
     }
 
 ul{
-    backgr/* . = class # = id */
-    body, html {
-        margin: 0px;
-        width: 100%;
-        height: 100%;
-        font-family: Arial, Tahoma, sans-serif;
-    }
-    #back {
-        position: fixed;
-        top: 0px;
-        width: 100%;
-        padding: 0px;
-        margin: 0px;
-    }
-    #welcome{
-        position: absolute;
-        right: 32.5%;
-        top: 25%;
-        padding: 15px;
-        border-radius: 10px;
-        width: 35%;
-        height: 300px;
-        font-size: 20px;
-        background: rgba(255,255,255,0.30);
-        color: cornsilk;
-    }
-    #yes{
-        background-color: rgba(204, 4, 4, 0.925);
-        position: absolute;
-        width: 30%;
-        right: 35%;
-        height: 20%;
-        text-align: center;
-        border-radius: 5px;
-    }
-    #email{
-        position: absolute;
-        width: 30%;
-        left: 32.5%;
-        top: 150px;
-        padding: 19px;
-        text-align: center;
-        font-size: 20px;
-        border-radius: 5px;
-        font-size: 20px;
-        background: rgba(255,255,255,0.30);
-        color: white;
-    }
-    
-    #yes:hover{
-        background-color: green;
-        cursor: pointer;
-    }
-    #sec{
-        color: white;
-        font-size: 16px;
-    }
-    section {
-        position:absolute;
-        display:inline-block; 
-        top: 50px;
-        left: 15%;
-        width: 70%;
-        height: 100%;
-        padding: 30px;
-    }
-    header{
-        color:white;
-    }
-    .options{
-        font-size: 13px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        display: inline-block;
-        position: relative;
-        left: 7.5%;
-        left: 50px;
-    }
-    
-    .body-text{
-        position: absolute;
-        display: inline-block;
-        left : 40px;
-        display: inline-block;
-        width: 33%;
-        font-size: 28px;
-        font-family: Arial, Helvetica, sans-serif;
-        color: cornsilk;
-    }
-    
-    .messageboxstylediv{
-        position: absolute;
-        right: 10px;
-        width: 60%;
-        height: 350px;
-        display: inline-block;
-    
-    }
-    
-    textarea{
-        display: inline-block;
-        font-size: 16px;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 3px;
-        width: 42%;
-        height: 100%;
-        padding: 5px;
-    
-    }
-    ::placeholder{
-    color: cornsilk;
-    }
-    .button{
-        background-color: rgba(255, 248, 220, 0.6);
-        border-radius: 5px;
-    }
-    .button:hover{
-        background-color: white;
-    }
-    .box-class{
-        padding: 10px;
-        background-color: rgba(255, 248, 220, 0.6);
-        color:rgb(32, 32, 32);
-        border: none;
-    }
-    #result{
-        background-color: rgba(255, 248, 220, 0.7);
-        color: black;
-    }
-    #menu{
-        position: absolute;
-        top: -20px;
-        z-index: 1;
-        width: 100%;
-        }
-    
-    ul{
-        background-color:cornsilk;
-        color:black;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-left: 10px;
-    }
-    li{
-        display: inline-block;
-        padding: 10px;
-    }
-    li:hover{
-        background-color: #2b0b01c2;
-        color: white;
-        cursor: pointer;
-    }
-    
-    footer{
-        font-size: 15px;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        position: fixed;
-        height: 20px;
-        bottom: 40px;
-        left: 0;
-        right: 0;
-    }
-    #about-us{
-        font-size: 17px;
-        color: cornsilk;
-    }ound-color:cornsilk;
+    background-color:cornsilk;
     color:black;
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 10px;
@@ -323,7 +168,7 @@ footer{
     left: 0;
     right: 0;
 }
-#sobre{
+#about-us{
     font-size: 17px;
     color: cornsilk;
 }
