@@ -27,10 +27,10 @@ const send = function () {
    result.innerHTML += `${resultPrint}`
 }
 const clear = function () {
-   document.getElementById("sobre").style.display = "none"
+   document.getElementById("about-us").style.display = "none"
    document.getElementById("sec").style.display = "none"
    document.getElementById("welcome").style.display = "none"
-   document.getElementById("contatoEmail").style.display = "none"
+   document.getElementById("email").style.display = "none"
 }
 const clearText = function () {
    let choice = document.getElementById("choice")
@@ -53,9 +53,9 @@ const reverse = function () {
 }
 const cifraReceita = function () {
    clear()
-   document.getElementById("sobre").style.display = "block"
+   document.getElementById("about-us").style.display = "block"
 }
-const inicio = function () {
+const home = function () {
    clear()
    document.getElementById("welcome").style.display = "block"
 }
@@ -63,18 +63,19 @@ const start = function () {
    clear()
    clearText()
 }
-const contato = function () {
+const contact = function () {
    clear()
-   document.getElementById("contatoEmail").style.display = "block"
+   document.getElementById("email").style.display = "block"
 }
 clear()
-inicio()
+home()
 document.getElementById("messageBox").addEventListener("input", send);
 document.getElementById("choice").addEventListener("click", send);
 document.getElementById("displacement").addEventListener("click", send);
 document.getElementById("cifraReceita").addEventListener("click", cifraReceita)
-document.getElementById("inicio").addEventListener("click", inicio)
-document.getElementById("sim").addEventListener("click", start)
-document.getElementById("contato").addEventListener("click", contato)
+document.getElementById("home").addEventListener("click", home)
+document.getElementById("yes").addEventListener("click", start)
+document.getElementById("contact").addEventListener("click", contact)
 document.getElementById("reverse").addEventListener("click", reverse)
 document.getElementById("clearText").addEventListener("click", clearText)
+
