@@ -26,12 +26,14 @@ const send = function () {
    }
    result.innerHTML += `${resultPrint}`
 }
+
 const clear = function () {
    document.getElementById("about-us").style.display = "none"
    document.getElementById("resume").style.display = "none"
    document.getElementById("welcome").style.display = "none"
    document.getElementById("mail").style.display = "none"
 }
+
 const clearText = function () {
    let choice = document.getElementById("choice")
    choice.choiceRadio.value = "c"
@@ -39,6 +41,7 @@ const clearText = function () {
    document.getElementById("resume").style.display = "block"
    send()
 }
+
 const reverse = function () {
    let choice = document.getElementById("choice")
    let message = document.getElementById("messageBox")
@@ -51,28 +54,34 @@ const reverse = function () {
    send()
 
 }
+
 const cifraReceita = function () {
    clear()
    document.getElementById("about-us").style.display = "block"
 }
+
 const home = function () {
    clear()
    document.getElementById("welcome").style.display = "block"
 }
+
 const start = function () {
    clear()
    clearText()
 }
+
 const contact = function () {
    clear()
    document.getElementById("mail").style.display = "block"
 }
+
 clear()
 home()
+
 document.getElementById("messageBox").addEventListener("input", send);
 document.getElementById("choice").addEventListener("click", send);
 document.getElementById("displacement").addEventListener("click", send);
-document.getElementById("cifraReceita").addEventListener("click", cifraReceita)
+document.getElementById("cifra-receita").addEventListener("click", cifraReceita)
 document.getElementById("home").addEventListener("click", home)
 document.getElementById("yes").addEventListener("click", start)
 document.getElementById("contact").addEventListener("click", contact)

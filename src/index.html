@@ -14,7 +14,7 @@
   <nave class="menu">
 
     <ul>
-      <li id="cifraReceita">Cifra Receita</li>
+      <li id="cifra-receita">Cifra Receita</li>
       <li id="home">Início</li>
       <li>Minhas Receitas</li>
       <li id="contact">Contato</li>
@@ -29,12 +29,13 @@
       <hr>
     </header>
     <div id="welcome" class="box-style welcome-style">
-        Bem vindo ao <b>CrifraReceita</b>!<br>
-        Aqui você pode cifrar e decifrar suas receitas
-        de uma forma simples.<br> Escolha o deslocamento, a
-        opção desejada e digite sua receite.
-        Deseja iniciar?<br><br><br>
-      <div id="yes" class="yes-style"><br>Sim<br></div></div>
+      Bem vindo ao <b>CrifraReceita</b>!<br>
+      Aqui você pode cifrar e decifrar suas receitas
+      de uma forma simples.<br> Escolha o deslocamento, a
+      opção desejada e digite sua receite.
+      Deseja iniciar?<br><br><br>
+      <div id="yes" class="yes-style"><br>Sim<br></div>
+    </div>
     <div id="mail" class="box-style mail-style">Atendimento - Cifra Receita<br>
       atendimento@cifrareceita.com<br>
       (11)1234-1234</div>
@@ -60,35 +61,44 @@
 
 
     </div>
-    <div id="resume">
-      <div class="body-text"><br>Suas<br>
-        <b><div class="font-large">Receitas</div></b>
-        e<br>
-        <b><div class="font-medium">Ingredientes</div></b>
-        <b><div class="font-large">protegidos</div></b><br>
-        de uma maneira<br>
-        simples e <br>
-        <b><div class="font-medium"> segura.</b></div>
-        </b></div>
-      <div class="messageboxstylediv">
-        <table>
-          <tr>
-            <td>
-              <label class="level">Level:</label>
-              <input id="displacement" value="1" size="100" type="number" min="-100" max="100" name="displacement"
-                placeholder="num" required>
-            </td>
-            <td>
-              <form id="choice">
-                <input type="radio" checked="true" name="choiceRadio" value="c"><label>Cifrar</label>
-                <input type="radio" name="choiceRadio" value="d"><label>Decifrar</label><br>
-              </form>
-            </td>
-            <td><img id="reverse" class="button" src="imagens/trocar.png" al="trocar"> </td>
-            <td><img id="clearText" class="button" src="imagens/icon-c.png" al="clear"> </td>
-          </tr>
-        </table>
-        <textarea class="box-class color-stlyle-box" id="messageBox" name="texto" rows="16" cols="25" placeholder="BRIGADEIRO:
+    <div id="resume" class="body-text">
+
+      <br>Suas<br>
+      <b>
+        <div class="font-large">Receitas</div>
+      </b>
+      e<br>
+      <b>
+        <div class="font-medium">Ingredientes</div>
+      </b>
+      <b>
+        <div class="font-large">protegidos</div>
+      </b><br>
+      de uma maneira<br>
+      simples e <br>
+      <b>
+        <div class="font-medium"> segura.</div>
+      </b>
+    </div>
+    <div class="messageboxstylediv">
+      <table>
+        <tr>
+          <td>
+            <label class="level">Level:</label>
+            <input id="displacement" value="1" size="100" type="number" min="-100" max="100" name="displacement"
+              placeholder="num" required>
+          </td>
+          <td>
+            <form id="choice">
+              <input type="radio" checked="true" name="choiceRadio" value="c"><label>Cifrar</label>
+              <input type="radio" name="choiceRadio" value="d"><label>Decifrar</label><br>
+            </form>
+          </td>
+          <td><img id="reverse" class="button" src="imagens/trocar.png" al="trocar"> </td>
+          <td><img id="clearText" class="button" src="imagens/icon-c.png" al="clear"> </td>
+        </tr>
+      </table>
+      <textarea class="box-class color-stlyle-box" id="messageBox" name="texto" rows="16" cols="25" placeholder="BRIGADEIRO:
         INGREDIENTES
         1 box-class de leite condensado
         1 colher (sopa) de margarina sem sal
@@ -99,15 +109,13 @@
         2.3.Cozinhe em fogo médio e mexa até que o brigadeiro comece a desgrudar da panela.
         Deixe esfriar e faça pequenas bolas com a mão passando a massa no chocolate granulado." required>
       </textarea>
-        <textarea class="box-class color-stlyle-box" id="result" name="texto" rows="16" cols="25" disabled>
+      <textarea class="box-class color-stlyle-box" id="result" name="texto" rows="16" cols="25" disabled>
     </textarea>
-      </div><br>
-    </div>
+    </div><br>
   </main>
   <footer>
     <ul>
-      <li><a href="https://www.facebook.com" target="_blank"><img
-            src="imagens/icon-f.png" al="Facebook"></a></li>
+      <li><a href="https://www.facebook.com" target="_blank"><img src="imagens/icon-f.png" al="Facebook"></a></li>
       <li><a href="https://www.instagram.com/?hl=pt-br" target="_blank"><img src="imagens/icon-i.png"
             al="Instagram"></a></li>
       <li><a href="https://twitter.com/" target="_blank"><img src="imagens/icon-tw.png" al="Twitter"></a></li>
@@ -117,4 +125,3 @@
 </body>
 
 </html>
-
