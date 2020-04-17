@@ -29,7 +29,7 @@ const send = function () {
 
 const clear = function () {
    document.getElementById("about-us").style.display = "none"
-   document.getElementById("resume").style.display = "none"
+   document.getElementById("cipher-menu").style.display = "none"
    document.getElementById("welcome").style.display = "none"
    document.getElementById("mail").style.display = "none"
 }
@@ -38,7 +38,7 @@ const clearText = function () {
    let choice = document.getElementById("choice")
    choice.choiceRadio.value = "c"
    messageBox.value = ""
-   document.getElementById("resume").style.display = "block"
+   document.getElementById("cipher-menu").style.display = "block"
    send()
 }
 
@@ -55,7 +55,7 @@ const reverse = function () {
 
 }
 
-const cifraReceita = function () {
+const about = function () {
    clear()
    document.getElementById("about-us").style.display = "block"
 }
@@ -81,7 +81,7 @@ home()
 document.getElementById("messageBox").addEventListener("input", send);
 document.getElementById("choice").addEventListener("click", send);
 document.getElementById("displacement").addEventListener("click", send);
-document.getElementById("cifra-receita").addEventListener("click", cifraReceita)
+document.getElementById("about").addEventListener("click", about)
 document.getElementById("home").addEventListener("click", home)
 document.getElementById("yes").addEventListener("click", start)
 document.getElementById("contact").addEventListener("click", contact)
