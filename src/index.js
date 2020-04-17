@@ -28,15 +28,15 @@ const send = function () {
 }
 const clear = function () {
    document.getElementById("about-us").style.display = "none"
-   document.getElementById("sec").style.display = "none"
+   document.getElementById("resume").style.display = "none"
    document.getElementById("welcome").style.display = "none"
-   document.getElementById("email").style.display = "none"
+   document.getElementById("mail").style.display = "none"
 }
 const clearText = function () {
    let choice = document.getElementById("choice")
    choice.choiceRadio.value = "c"
    messageBox.value = ""
-   document.getElementById("sec").style.display = "block"
+   document.getElementById("resume").style.display = "block"
    send()
 }
 const reverse = function () {
@@ -65,7 +65,7 @@ const start = function () {
 }
 const contact = function () {
    clear()
-   document.getElementById("email").style.display = "block"
+   document.getElementById("mail").style.display = "block"
 }
 clear()
 home()
