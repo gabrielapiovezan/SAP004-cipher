@@ -24,15 +24,12 @@ const start = function (displacementNumber, message) {
       for (let i = 0; i < message.length; i++) {
 
          if ((message.charCodeAt(i) >= 97) && (message.charCodeAt(i) <= 122)) {
-
             letter = 97
             spin = 123
          }
 
          else if ((message.charCodeAt(i) >= 65) && (message.charCodeAt(i) <= 90)) {
             letter = 65
-            spin = 91
-
          }
 
          if (letter === 0) {
