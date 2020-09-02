@@ -13,8 +13,7 @@ html {
 }
 body {
   background-image: url("./imagens/imagem-2.jpg");
-  background-position: top left;
-  background-size: 100%;
+  background-position: top right;
 }
 ul {
   list-style: none;
@@ -54,11 +53,12 @@ ul {
   width: 150px;
   margin: 0 auto;
   height: 50px;
-  text-align: center;
   border-radius: 5px;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
-
 .mail-style {
   position: absolute;
   width: 30%;
@@ -220,6 +220,7 @@ footer > p {
   }
   body {
     background-size: auto;
+    background-position: top left;
   }
   .box-container {
     display: flex;
@@ -237,17 +238,9 @@ footer > p {
     width: 100%;
     margin-bottom: 20px;
   }
-  /* .menu-options {
-    display: none;
-  } */
   #menu-burguer:hover .menu-options {
     background-color: #2b0b01;
   }
-  /* .menu-options {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  } */
 }
 @media only screen and (max-width: 800px) {
   nav ul {
